@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <div class="container-1">
+        <div>
+            <h2>Challenge 1: Enter the age.</h2>
+        </div>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" style="column-rule-color: blue" onclick="onClick()">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id ="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator </h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCatGif()">Cat Generator</button>
+        <div class="flex-box-container-2" id ="flex-cat-generator">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div>
+            <h2>Rock, paper, Scissors</h2>
+        </div>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="images/rock.jpg" id="rock" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img src="images/paper.jpg" id="paper" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img src="images/scissors.jpg" id="scissors" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+
+
+    <div class="container-5">
+        <h2>Blackjack Game</h2>
+        <h3><span id="blackjack-game-result">Let's Play</span> </h3>
+        <div class="flex-blackjack-game-row-1">
+            <div id="your-box">
+                <h2>Your Score: <span id="your-blackjack-result"></span>0</h2>
+            </div>
+            <div id="dealer-score">
+                <h2>Dealer Score:<span id="dealer-blackjack-result"></span> 0</h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-game-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="flex-blackjack-hit" onclick="blackjackHit()">Hit</button>
+                <button class="btn-lg btn-warning mr2" id="flex-blackjack-standby" onclick="blackjackStandBy()">Stand By</button>
+                <button class="btn btn-danger" id="flex-blackjack-deal" onclick="blackjackDeal()">Deal</button>
+            </div>
+        </div>
+        <div>
+            <div class="flex-blackjack-game-row-3">
+                <table style="border: 1px black";>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                        <th>Draws</th>
+                    </tr>
+
+                    <tr>
+                        <td><span id="wins"></span>0</td>
+                        <td><span id="loses"></span>0</td>
+                        <td><span id="draws"></span>0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+
+</body>
+</html>
